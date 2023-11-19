@@ -1,0 +1,124 @@
+html {
+  background: linear-gradient(to right, #dadada, #ffffff);
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.index-sami {
+  display: block;
+  position: fixed;
+  height: 300px;
+  top: 100px;
+  right: -150px;
+  transform: rotate(320deg);
+  transition: ease 1s;
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+    position: fixed;
+    transform: rotate(310deg);
+    right: -100px;
+    transition: ease 1s;
+  }
+}
+
+.welcome {
+  margin: 4em auto 8em auto;
+}
+
+.welcome-message {
+  font-size: 1.75em;
+  line-height: 125%;
+}
+
+.index-element {
+  width: 40%;
+  max-width: 768px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-primary {
+  text-align: justify;
+}
+
+.index-secondary {
+  text-align: center;
+}
+
+.index-portrait {
+  max-height: 300px;
+  max-width: 80%;
+  border-radius: 45%;
+  border: 4px solid #c2adc31f;
+  transform: rotate(4deg);
+}
+
+@media only screen and (max-width: 1400px) {
+  .index-container {
+      flex-direction: column;
+      flex-flow: column;
+  }
+
+  .welcome {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .welcome-message {
+    font-size: 1.5em;
+    line-height: 125%;
+  }
+
+  .index-element {
+      width: 90%;
+  }
+  
+  .index-secondary {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .index-portrait {
+    max-height: 33vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .index-secondary {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: right;
+  }
+
+  .index-portrait {
+    display: none;
+  }
+
+  .index-sami {
+    height: 200px;
+    right: -100px;
+    transform: rotate(320deg);
+    transition: ease 1s;
+    z-index: 1;
+  
+    &:hover {
+      cursor: pointer;
+      position: fixed;
+      transform: rotate(310deg);
+      right: -69px;
+    }
+  }
+}

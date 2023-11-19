@@ -1,0 +1,94 @@
+$color-purple: #8d95e1;
+$color-rose: #ffd9db;
+$color-red: #dc81a0;
+$color-green: #a7e2cb;
+$color-violet: #c3adc4;
+$color-turquoise: #a0d4d1;
+$color-blue: #7cbfd7;
+
+:export {
+    color-purple: $color-purple;
+    color-rose: $color-rose;
+    color-red: $color-red;
+    color-green: $color-green;
+    color-violet: $color-violet;
+    color-turquoise: $color-turquoise;
+    color-blue: $color-blue;
+}
+
+.background-purple {
+    background: linear-gradient(to bottom, #8d95e1 0%, #8d95e1 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+  }
+  
+.background-rose {
+    background: linear-gradient(to bottom, #ffd9db 0%, #ffd9db 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}
+  
+.background-red {
+    background: linear-gradient(to bottom, #dc81a0 0%, #dc81a0 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}
+  
+.background-green {
+    background: linear-gradient(to bottom, #a7e2cb 0%, #a7e2cb 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}
+  
+.background-violet {
+    background: linear-gradient(to bottom, #c3adc4 0%, #c3adc4 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}
+  
+.background-turquoise {
+    background: linear-gradient(to bottom, #a0d4d1 0%, #a0d4d1 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}
+  
+.background-blue {
+    background: linear-gradient(to bottom, #7cbfd7 0%, #7cbfd7 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: black;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    margin: 0 4px;
+}

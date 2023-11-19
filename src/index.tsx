@@ -4,6 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import "@fontsource/cormorant-garamond"
+import "@fontsource/lato"
+import "@fontsource/quicksand"
+import "@fontsource/bebas-neue"
+import "@fontsource/rowdies"
+import "@fontsource/anton"
+
+import './styles/App.scss'
+import './styles/Colors.scss'
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

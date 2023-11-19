@@ -1,0 +1,52 @@
+.Welcome {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 30vh auto 0 auto;
+    text-align: justify;
+    flex-direction: column;
+
+    h1 {
+        background: #ffcd08;
+        padding: 0.5em;
+        box-shadow: 0 0 0 0 #000, 4px 4px 0 #000, 4px 4px 0 #000;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: black;
+    }
+}
+
+.Welcome-details {
+    display: flex;
+    justify-content: space-between;
+    
+    & span {
+        width: 30%;
+    }
+}
+
+.Welcome-block {
+    width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+    .Welcome {
+        margin: 0 auto;
+
+        .Welcome-details {
+            flex-direction: column;
+
+            & span {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            text-align: left;
+        }
+    }
+
+    .Welcome-block {
+        width: 100%;
+    }
+}
