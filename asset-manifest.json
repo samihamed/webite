@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webite/static/css/main.ed47faaa.css",
-    "main.js": "/webite/static/js/main.30fa47e8.js",
+    "main.css": "/webite/static/css/main.8da27256.css",
+    "main.js": "/webite/static/js/main.fe3f5f35.js",
     "static/js/787.71e672d5.chunk.js": "/webite/static/js/787.71e672d5.chunk.js",
     "static/media/anton-latin-ext-400-normal.woff2": "/webite/static/media/anton-latin-ext-400-normal.31155727a81b4ab9732b.woff2",
     "static/media/cormorant-garamond-latin-400-normal.woff": "/webite/static/media/cormorant-garamond-latin-400-normal.b36da887e85996f8187a.woff",
@@ -40,12 +40,15 @@
     "static/media/lato-latin-ext-400-normal.woff": "/webite/static/media/lato-latin-ext-400-normal.c62d8b2772865c9ac5ba.woff",
     "static/media/quicksand-vietnamese-400-normal.woff2": "/webite/static/media/quicksand-vietnamese-400-normal.001708e70ef991eec89b.woff2",
     "index.html": "/webite/index.html",
-    "main.ed47faaa.css.map": "/webite/static/css/main.ed47faaa.css.map",
-    "main.30fa47e8.js.map": "/webite/static/js/main.30fa47e8.js.map",
+    "static/media/podcast.svg": "/webite/static/media/podcast.d94104d09a28220b4939852d84076174.svg",
+    "static/media/blog-post.svg": "/webite/static/media/blog-post.83b956d832d21dcb63789e43fcd96c96.svg",
+    "static/media/music.svg": "/webite/static/media/music.ee95d2c57654d7d22b1e505637bdc2f1.svg",
+    "main.8da27256.css.map": "/webite/static/css/main.8da27256.css.map",
+    "main.fe3f5f35.js.map": "/webite/static/js/main.fe3f5f35.js.map",
     "787.71e672d5.chunk.js.map": "/webite/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed47faaa.css",
-    "static/js/main.30fa47e8.js"
+    "static/css/main.8da27256.css",
+    "static/js/main.fe3f5f35.js"
   ]
 }
