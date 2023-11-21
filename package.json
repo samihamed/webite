@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "homepage": "https://samihamed.github.io/webite",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fontsource/anton": "^5.0.17",
     "@fontsource/bebas-neue": "^5.0.17",

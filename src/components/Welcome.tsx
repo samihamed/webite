@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Cutout from '../assets/cutout.png'
+import Software from '../assets/1.png'
+import Consulting from '../assets/2.png'
 
 import '../styles/Welcome.scss'
 
@@ -7,6 +10,26 @@ export default class Welcome extends Component {
     render() {
         return (
             <div className="Welcome">
+            </div>
+        )
+    }
+}
+/* export default class Welcome extends Component {
+    render() {
+        return (
+            <div className="Welcome">
+
+                <div className="Welcome-header">
+                    <img src={Cutout} className="Welcome-logo" alt="Sami Hamed's logo" />
+                    <h1>Sami Hamed</h1>
+                </div>
+                <span>
+                    <u>Data,</u> <u>Software</u> & <u>Product</u> | Making things impactful, useful & engaging.
+                </span>
+                <br />
+                <span>
+                    I help startups and scale-ups create engaging digital products, build effective software & product teams, and grow their business sustainably.
+                </span>
 
                 <h1><u>Data,</u> <u>Software</u> & <u>Product</u> | Making things impactful, useful & engaging.</h1>
                 
@@ -61,4 +84,4 @@ export default class Welcome extends Component {
             </div>
         )
     }
-}
+}*/

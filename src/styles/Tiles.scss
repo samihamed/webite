@@ -1,17 +1,18 @@
 .Tile {
-    border-radius: 8px;
     overflow: hidden;
-    background-color: #e3d5ca;
     color: #000;
     padding: 24px;
-    width: 80vw;
-    max-width: 750px;
+    margin: 24px auto;
+    width: calc(25% - 32px - 52px);
+    min-height: 14vw;
+    border: 2px solid #000;
     box-shadow: 0 0 0 0 #000, 4px 4px 0 #000, 4px 4px 0 #000;
-    border: 2px solid black;
     
     .Tile-header {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
 
         img {
             height: 40px;
