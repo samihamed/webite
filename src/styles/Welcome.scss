@@ -1,67 +1,55 @@
 .Welcome {
     display: flex;
-    justify-content: center;
-    text-align: justify;
     flex-direction: column;
-    padding: 24px;
+    align-items: start;
+    margin: 0 48px;
+    font-family: 'Lato', 'Arial Narrow', Arial, sans-serif;
 
-    .Welcome-logo {
-        height: 48px;
-        width: 48px;
+    .Welcome-section {
+        text-align: left;
+        width: 100%;
+
+        .Welcome-section-tiles {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+        }
+
+        .Welcome-divider {
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            margin-top: 24px;
+        }
     }
-    
-    .Welcome-header {
+
+    .Welcome-greeting-container {
+        text-align: left;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        
+        .Welcome-greeting-container-greeting {
+            align-items: center;
+            max-width: 800px;
+            text-align: justify;
+            margin-right: 24px;
+            margin-bottom: 24px;
 
-        img {
-            margin: 0 24px;
-        }
+            .Welcome-greeting-Chips {
+                display: flex;
+                margin-top: 24px;
 
-        h1 {
-            font-size: 1.5em;
-        }
-    }
-
-    span {
-        font-size: .75em;
-        text-align: justify;
-        justify-content: left;
-    }
-}
-
-.Welcome-details {
-    display: flex;
-    justify-content: space-between;
-    
-    & span {
-        width: 30%;
-    }
-}
-
-.Welcome-block {
-    width: 30%;
-}
-
-@media only screen and (max-width: 900px) {
-    .Welcome {
-        margin: 0 auto;
-
-        .Welcome-details {
-            flex-direction: column;
-
-            & span {
-                width: 100%;
+                .Chip {
+                    padding: 4px 12px;
+                    font-size: 2em;
+                }
+            }
+            
+            h2 {
+                font-size: 2em;
+                font-weight: 100;
+                margin: 0;
             }
         }
 
-        h1 {
-            text-align: left;
-        }
-    }
-
-    .Welcome-block {
-        width: 100%;
     }
 }

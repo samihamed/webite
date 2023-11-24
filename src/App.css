@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(to bottom, #fafafa, #f8f7f7);
+  background-color: #fff;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
@@ -7,16 +7,6 @@ html {
 .App {
   text-align: center;
   align-items: center;
-}
-
-.Tiles {
-  display: flex;
-  width: 100vw;
-  margin: 0 auto;
-}
-
-.Tiles-column {
-  flex-direction: column;
 }
 
 .App-logo {

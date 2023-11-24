@@ -7,45 +7,54 @@ import Chip from './Chip'
 import LinkedIn from '../assets/linkedin.png'
 import Hashtag from '../assets/hashtag.png'
 
+import Post from '../assets/blog-post.svg'
+import Podcast from '../assets/podcast.svg'
+import Workshop from '../assets/workshop.svg'
+import Music from '../assets/music.svg'
+
 type TileProps = {
     backgroundColor: string,
     title: string,
     description: string,
-    icon?: string,
+    icon: string,
     width?: string,
     type?: string,
     hashtags?: Array<string>,
     link?: string
-    backgroundImage?: string
+    image?: string
+}
+
+let returnIcon = (type: string) => {
+    if (type === 'Post') return Post
+    if (type === 'Podcast') return Podcast
+    if (type === 'Workshop') return Workshop
+    if (type === 'Music') return Music
 }
 
 const Tile = (props: TileProps) => {
     return (
         <div className="Tile" style={{
-            backgroundColor: props.backgroundColor,
-            backgroundImage: Cutout || ''
+            backgroundColor: props.backgroundColor
         }}>
-            
-            <div className="Tile-header">
-                
-                {!!props.icon ? <img src={props.icon} alt="Tile-specific icon" /> : <span></span>}
-                
-                <h3>{props.title}</h3>
 
-            </div>
-            
-            <div className="Tile-content">{props.description}</div>
-            
-            <div className="Chips">
+            <div className="Tile-details">
                 
-                <a href="https://www.linkedin.com/in/samihamed/" target='_blank'>
-                    <Chip title='LinkedIn' image={LinkedIn} backgroundColor='#d5bdaf'/>
-                </a>
+                <div className="Tile-header">
+                    
+                    {!!props.icon ? <img src={returnIcon(props.icon)} alt="Tile-specific icon" /> : <span></span>}
+                    
+                    <h3>{props.title}</h3>
 
-                <Chip title='Data' image={Hashtag} backgroundColor='#edafb8'/>
-                <Chip title='Product' image={Hashtag} backgroundColor='#f7e1d7'/>
-                <Chip title='Leadership' image={Hashtag} backgroundColor='#b0c4b1'/>
-                <Chip title='Strategy' image={Hashtag} backgroundColor='#bcb8b1'/>
+                </div>
+            
+                <div className="Chips">
+                    { !!props.hashtags ? props.hashtags.map((hashtag: string) => <Chip title={hashtag} backgroundColor='#fff'/>) : ''}
+                </div>
+
+                { !!props.image
+                    ? <div className='Tile-details-image-container'><img src={props.image} alt="Image related to the blog post" /></div>
+                    : <p className="Tile-content">{props.description}</p>
+                }
                 
             </div>
         
