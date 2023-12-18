@@ -50,3 +50,124 @@
         font-size: 2em;
     }
 }
+
+.Header-memoji {
+    // background: linear-gradient(to bottom, #ddd6f3, #b3a7c9) !important;
+    // border: 8px solid #000;
+    // box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.555), 4px 4px 0px rgba(0, 0, 0, 0.555), 4px 4px 0px rgba(0, 0, 0, 0.555);
+    background-color: #ffcd08 !important;
+    border-radius:  46% 45% 37% 39% /
+                    50% 40% 45% 42%;
+    animation: wobble 2s ease alternate infinite;
+    margin-right: 2em !important;
+    height: 300px;
+    width: 300px;
+    max-height: 75vw;
+    
+    img {
+        position: relative;
+        bottom: -1.5em;
+        height: 300px;
+        max-height: 75vw;
+    }
+}
+
+.Header-headline {
+    h1 {
+        color: #000;
+        font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h2 {
+        color: #000;
+        font-size: 3em;
+    }
+
+    .Header-quicklinks {
+        display: flex;
+        justify-content: space-between;
+        max-width: 250px;
+
+        img {
+            height: 50px;
+        }
+    }
+
+}
+
+.Header > nav > .Header-link-container {
+    min-width: 12em;
+    text-align: center;
+}
+
+.Header-link-container > a {
+    font-size: 1.5em;
+}
+
+.Header-link-container > a {
+    transition: color ease 0.5s;
+}
+
+.Header-link-container > a:hover {
+    font-weight: 900;
+    color: #7cbfd7;
+    transition: color ease 0.5s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 900px) {
+    .Header-memoji {
+        margin-right: 0 !important;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+
+        .Header-headline > a > h1 {
+            position: relative;
+            background: white;
+            padding: 0.5em 0;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 0 0 #000, 4px 4px 0 #000, 4px 4px 0 #000;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: black;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                transform: translate(2px, 2px);
+                box-shadow: 0 0 0 0 #000;
+            }
+        }
+    }
+
+    .Header > nav > div {
+        margin: 0 1em;
+        align-items: left;
+    }
+
+    .Header-quicklinks {
+        margin: 3em auto;
+    }
+}
+
+@keyframes wobble {
+    50% {
+      border-radius:    48% 50% 50% 40% /
+                        40% 41% 41% 50%;
+    }
+    100% {
+      border-radius:    44% 38% 41% 40% /
+                        48% 46% 50% 45%;
+    }
+  }

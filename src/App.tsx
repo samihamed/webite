@@ -16,13 +16,22 @@ import Bubbles from './assets/3.png'
 import Bubbles2 from './assets/4.png'
 
 import AstroChess from './assets/5.png'
+import Testimonial from './components/Testimonials';
+import Companies from './components/Companies';
+import Greeting from './components/Greeting';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         
-        <Header/>
+        <Header/> 
+
+        <Greeting />
+
+        <Companies />
+        
+        <Testimonial isPreview="true" />
             
         <Welcome/>
 
