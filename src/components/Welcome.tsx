@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Capoeira from '../assets/9.png'
-import Creative from '../assets/13.png'
+
+import Arrow from '../assets/arrow.svg'
 
 import RobotDogRestaurant from '../assets/robot_dog_restaurant.png'
 import AIRenaissance from '../assets/ai_renaissance.png'
@@ -32,14 +32,14 @@ export default class Welcome extends Component {
 
                         <br />
 
-                        <h2>
+                        <h2 className='Welcome-greeting-container-greeting-highlighted'>
                             I help startups and scale-ups create engaging digital products,
                             build effective software & product teams, and grow their business
                             sustainably.
                         </h2>
                         
-                        <h3 style={{fontWeight: 500}}>
-                            ...and I teach some kickass Capoeira classes.
+                        <h3>
+                            ... and I teach some kickass Capoeira classes.
                         </h3>
 
                         <div className='Welcome-greeting-Chips'>
@@ -52,8 +52,16 @@ export default class Welcome extends Component {
                     </div>
                 </div>
                 
-                <h2 className='Welcome-section'>
-                    Software & Product Development
+                <div className='Welcome-section'>
+                    
+                    <div className='Welcome-section-header'>
+                        <h2 className='Welcome-section-title'>Software & Product Development</h2>
+                        <div className='Welcome-section-read-more'>
+                            <h2>Read more</h2>
+                            <img src={Arrow} alt="Arrow icon" />
+                        </div>
+                    </div>
+
                     <div className='Welcome-divider'></div>
                     
                     <div className='Welcome-section-tiles'>
@@ -89,10 +97,18 @@ export default class Welcome extends Component {
                             hashtags={['Medium', 'Leadership', 'Software']}
                         />
                     </div>
-                </h2>
+                </div>
                 
-                <h2 className='Welcome-section'>
-                    Capoeira Workshops
+                <div className='Welcome-section'>
+
+                    <div className='Welcome-section-header'>
+                        <h2 className='Welcome-section-title'>Capoeira Workshops</h2>
+                        <div className='Welcome-section-read-more'>
+                            <h2>Read more</h2>
+                            <img src={Arrow} alt="Arrow icon" />
+                        </div>
+                    </div>
+
                     <div className='Welcome-divider'></div>
                     
                     <div className='Welcome-section-tiles'>
@@ -128,10 +144,18 @@ export default class Welcome extends Component {
                                 hashtags={['Acrobatics']}
                         />
                     </div>
-                </h2>
+                </div>
                 
-                <h2 className='Welcome-section'>
-                    Other content I'm proud of
+                <div className='Welcome-section'>
+
+                    <div className='Welcome-section-header'>
+                        <h2 className='Welcome-section-title'>Other Topics</h2>
+                        <div className='Welcome-section-read-more'>
+                            <h2>Read more</h2>
+                            <img src={Arrow} alt="Arrow icon" />
+                        </div>
+                    </div>
+
                     <div className='Welcome-divider'></div>
                     <div className='Welcome-section-tiles'>
                         <Tile
@@ -166,7 +190,8 @@ export default class Welcome extends Component {
                                 hashtags={['product', 'startup']}
                         />
                     </div>
-                </h2>
+                </div>
+
             </div>
         )
     }

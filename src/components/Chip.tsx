@@ -8,7 +8,8 @@ import Hashtag from '../assets/hashtag.png'
 type ChipProps = {
     title: string,
     backgroundColor: string,
-    image?: string
+    image?: string,
+    color?: string
 }
 
 const stringToColour = (str: string) => {
@@ -28,8 +29,8 @@ const Chip = (props: ChipProps) => {
     return (
         <div className="Chip" style={{ backgroundColor: !!props.backgroundColor ? props.backgroundColor : stringToColour(props.title)}}>
             {!!props.image ? <img src={props.image} alt="The LinkedIn logo." /> : ''}
-            <img src={Hashtag} alt="Hashtag SVG"/>
-            <p>{props.title}</p>
+            <img src={Hashtag} alt="Hashtag SVG" style={{ filter: props.color === 'white' ? 'invert(1)' : 'invert(0)'}}/>
+            <p style={{color: props.color || '#000'}}>{props.title}</p>
         </div>
     )
 }

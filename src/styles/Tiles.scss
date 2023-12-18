@@ -3,49 +3,53 @@
     color: #fff !important;
     background-color: #000 !important;
     width: calc(25vw - 52px);
-    max-height: calc(25vw - 100px);
+    height: calc(25vw - 100px);
+    max-height: 500px;
     border-radius: 4px;
     box-shadow: 0 0 0 0 #7c7c7c, 4px 4px 0 #7c7c7c, 4px 4px 0 #7c7c7c;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 
-    .Tile-details {
-        .Tile-details-image-container {
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-
-            img {
-                width: 100%;
-                filter: grayscale(1);
-            }
-        }
-    }
-    
-    .Tile-header {
+    .Tile-details-image-container {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
         display: flex;
-        align-items: flex-start;
-        justify-content: left;
-        text-align: left;
-        padding: 16px;
 
         img {
-            height: 1.25em;
-            margin: 0 8px 0 0;
-            filter: invert(1);
+            width: 100%;
+            filter: opacity(.8);
         }
+    }
 
-        h3 {
-            margin: 0;
-            font-size: 1em;
+    .Tile-details {
+        .Tile-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: left;
+            text-align: left;
+            padding: 16px;
+
+            img {
+                height: 1.25em;
+                margin: 0 8px 0 0;
+                filter: invert(1);
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1.25em;
+            }
+
         }
     }
     
     .Tile-content {
         text-align: justify;
-        font-size: .75em;
+        font-size: 1em;
         font-weight: 100;
         padding: 0 16px;
         margin-top: 8px;
@@ -59,5 +63,14 @@
         margin-top: auto;
         margin-left: 16px;
         margin-bottom: 8px;
+    }
+}
+
+.Tile:hover {
+    .Tile-details-image-container {
+        img {
+            filter: opacity(1);
+            transition: ease .4s;
+        }
     }
 }

@@ -50,13 +50,13 @@ const Tile = (props: TileProps) => {
                 <div className="Chips">
                     { !!props.hashtags ? props.hashtags.map((hashtag: string) => <Chip title={hashtag} backgroundColor='#fff'/>) : ''}
                 </div>
-
-                { !!props.image
-                    ? <div className='Tile-details-image-container'><img src={props.image} alt="Image related to the blog post" /></div>
-                    : <p className="Tile-content">{props.description}</p>
-                }
                 
             </div>
+            
+            { !!props.image
+                ? <div className='Tile-details-image-container'><img src={props.image} alt="Image related to the blog post" /></div>
+                : <p className="Tile-content">{props.description}</p>
+            }
         
         </div>
     )
