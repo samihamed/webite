@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://samihamed.github.io/webite",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "@fontsource/anton": "^5.0.17",
