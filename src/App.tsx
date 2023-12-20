@@ -19,6 +19,7 @@ import AstroChess from './assets/5.png'
 import Testimonial from './components/Testimonials';
 import Companies from './components/Companies';
 import Greeting from './components/Greeting';
+import Blocks from './components/Blocks';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Companies />
         
         <Testimonial isPreview="true" />
+
+        <Blocks />
             
         <Welcome/>
 
